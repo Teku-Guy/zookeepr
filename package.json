@@ -1,25 +1,16 @@
 {
-  "name": "zookeepr",
+  "name": "main",
   "version": "1.0.0",
-  "description": "Module 11 UCLA",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Teku-Guy/zookeepr.git"
+    "test": "jest",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Teku-Guy/zookeepr/issues"
-  },
-  "homepage": "https://github.com/Teku-Guy/zookeepr#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.9"
+    "express": "^4.17.1"
   }
 }
