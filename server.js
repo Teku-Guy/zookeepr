@@ -6,7 +6,7 @@ const app = express();
 const { animals } = require('./data/animals');
 
 //port where our server will run
-let port = 3001;
+const PORT = process.env.PORT || 3001;;
 
 //filter Query functions
 function filterByQuery(query, animalsArray) {
@@ -57,7 +57,7 @@ app.get('/api/animals', (req, res) => {
     res.json(results);
 });
 
-//Creates a Server at http://localhost:${port}
-app.listen(port, () => {
-    console.log(`API server now on port ${port}!`);
+//Creates a Server at to run our app at either port 80 or port 3001
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}!`);
 });
